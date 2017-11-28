@@ -15,21 +15,21 @@ function draw() {
   background(0);
 
   let m1 = map(mouseX,0,width,0,255);
-  let m2 = map(mouseY,0,width,0,255);
+  let m2 = map(mouseY,0,height,0,255);
   let m3 = map(mouseX,0,width,255,0);
   let m4 = map(mouseY,0,width,255,0);
 
-  let box1 = color(255,0,0,m1);
-  let box2 = color(0,255,0,m2);
-  let box3 = color(0,0,255,m3);
-  let box4 = color(255,0,255,m4);
+  let c1 = color(255,0,0,m1);
+  let c2 = color(0,255,0,m2);
+  let c3 = color(0,0,255,m3);
+  let c4 = color(255,0,255,m4);
 
-  fill(box1);
+  fill(c1);
   rect (0,0,size,size);
-  fill(box2);
+  fill(c2);
   rect (0,size,size,size);
-  fill(box3);
+  fill(c3);
   rect (size,0,size,size);
-  fill(box4);
+  fill(c4);
   rect (size,size,size,size);
     }
